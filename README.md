@@ -19,8 +19,8 @@ Nesse repositório vou colocar todos os arquivo do curso `Análise exploratória
 - Plotly
 - Matplotlib.
 - Re - Expressões Regulares
-## O que é EDA?
 
+## O que é EDA?
 `Exploratory Data Analysis` ou `Análise Explotatória de dados`. É uma abordagem inicial e crucial para entender a natureza e as características dos dados antes de aplicar métodos mais avançados de análises. 
 
 #### Indicadores do EDA:
@@ -38,5 +38,12 @@ def remove_html(html):
     pattern = re.compile('<.*?>')
     cleantext = re.sub(pattern, '', html)
     return cleantext.replace('*', '').strip()
+```
+
+- Formatar valores nulos:
+
+```
+def format_percent(value):
+    return f'{100 * value:.2f}%'
 ```
 
